@@ -1,0 +1,12 @@
+title: Cody Yeh (葉)
+description: Materials & Biomedical Engineer | University of Toronto
+theme: jekyll-theme-minimal
+
+# 導覽選單 (這些 .md 檔案我們之後可以一個個建立)
+header_pages:
+  - index.md
+  - experience.md
+  - publications.md
+
+# 社交連結 (會出現在網頁底部)
+footer: "Connect with me on [LinkedIn](https://www.linkedin.com/in/codyyeh0425) | [GitHub](https://github.com/codyyeh0425)"
