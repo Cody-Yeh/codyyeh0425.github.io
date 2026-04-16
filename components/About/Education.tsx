@@ -16,15 +16,13 @@ export default function Education() {
                 key={idx}
                 className="rounded-lg bg-gray-50 shadow-sm dark:bg-gray-700"
               >
-                {/* University Section */}
                 <th className="w-1/3 p-4 align-top text-lg font-semibold text-blue-600 dark:text-blue-300">
                   <a
                     href={education.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:underline flex items-center space-x-3"
+                    className="flex items-center space-x-3 hover:underline"
                   >
-                    {/* University Logo */}
                     <Image
                       src={education.logo}
                       alt="University Logo"
@@ -36,37 +34,17 @@ export default function Education() {
                   </a>
                 </th>
 
-                {/* Degree and Details */}
                 <td className="w-2/3 p-4">
                   <div className="mb-1 text-gray-800 dark:text-white">
                     <b>{education.degree_type}</b>
                     <br />
                     {education.degree_name}
-                    {/* <span>
-                      B.B.A. in {' '}
-                      <a
-                        href="https://management.ntu.edu.tw/en/IM"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-blue-600 hover:underline dark:text-blue-300"
-                      >
-                        Information Management
-                      </a>
-                      {' '} & B.S. in {' '}
-                      <a
-                        href="https://www.geog.ntu.edu.tw/en"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-blue-600 hover:underline dark:text-blue-300"
-                      >
-                        Geography
-                      </a>
-                    </span> */}
                   </div>
-                  <div className="text-sm mb-2 text-gray-500 dark:text-gray-400">
+
+                  <div className="mb-2 text-sm text-gray-500 dark:text-gray-400">
                     {education.period}
                   </div>
-                  {/* GPA Details */}
+
                   <ul className="list-inside list-disc text-sm text-gray-700 dark:text-gray-300">
                     {education.gpa.map((item, gpaIdx) => (
                       <li key={gpaIdx}>
@@ -74,6 +52,19 @@ export default function Education() {
                       </li>
                     ))}
                   </ul>
+
+                  {education.transcript && (
+                    <div className="mt-4">
+                      <a
+                        href={education.transcript}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 rounded-md border px-4 py-2 text-sm text-blue-500 hover:bg-gray-100 dark:hover:bg-gray-600"
+                      >
+                        View Transcript →
+                      </a>
+                    </div>
+                  )}
                 </td>
               </tr>
             ))}

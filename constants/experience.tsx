@@ -1,646 +1,337 @@
 import { StaticImageData } from "next/image";
-import QUID from '../public/logos/quid.png';
-import ACADEMIA from '../public/logos/academia.png';
-import CIENET from '../public/logos/cienet.png';
-import NSTC from '../public/logos/nstc.jpeg';
-import InsightLink_Framework from '../public/project_img/imp_framework.png';
-import IMV_Framework from '../public/project_img/imv_framework.png';
-import area_pic from '../public/project_img/area_pic.png';
-import QBSS from '../public/project_img/qbss.jpg';
+import NCKU from '../public/logos/ncku.png';
+import TBMS from '../public/logos/tbms.png';
+import TMUManagement from '../public/logos/tmu_management.png';
+import PericardiumPatch from '../public/project_img/pericardium_patch.png';
+import ElectrospinningProject from '../public/project_img/ElectrospinningProject.png';
+import SCPL from '../public/project_img/SCPL.png';
+import BMDM from '../public/project_img/BMDM.png';
+import MethodX from '../public/project_img/MethodX.png';
+
 
 type IndustryDataType = [React.ReactNode, React.ReactNode, StaticImageData];
 
-const industryData : IndustryDataType[] = [
+const industryData: IndustryDataType[] = [
   [
     <a
-      href="https://www.quid.com/"
+      href="https://web.hosp.ncku.edu.tw/nckm/english/HomeStyle.aspx?Type=11&ContentPage=0"
       target="_blank"
       rel="noopener noreferrer"
       className="text-blue-500 hover:underline dark:text-blue-300"
     >
-      Quid Inc.
+      National Cheng Kung University Hospital
     </a>,
     <div>
       <div className="text-black dark:text-white">
-        <b>Title: </b> Machine Learning Engineering Intern
+        <b>Title:</b> Biomedical Engineer Intern
       </div>
-      <div className="text-black dark:text-white">
-        <b>Mentor: </b>
-        <a
-          href="https://www.linkedin.com/in/larrick-chen-b346b933/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-500 hover:underline dark:text-blue-300"
-        >
-          Larrick Chen
-        </a>
-      </div>
-      <div className="text-black dark:text-white">
-         <b>Team: </b> Discover Analysis {/*& Predict */}
-      </div>
+
       <div>
-        <b className="text-black dark:text-white">Dates: </b> Dec. 2024 - Jun. 2025
+        <b className="text-black dark:text-white">Dates: </b>Jan. 2024 - Feb. 2024
       </div>
+
+      <p className="mt-2 text-black dark:text-white">
+        <b>Description:</b> Performed functional testing and supported troubleshooting and preventive maintenance of clinical monitoring devices, with exposure to imaging and surgical systems.
+      </p>
     </div>,
-    QUID,
+    NCKU,
   ],
   [
     <a
-      href="https://www.iis.sinica.edu.tw/zh/index.html"
+      href="https://www.tbms.com.tw/en-us/"
       target="_blank"
       rel="noopener noreferrer"
       className="text-blue-500 hover:underline dark:text-blue-300"
     >
-      Academia Sinica
+      TBMS International Corporation
     </a>,
     <div>
       <div className="text-black dark:text-white">
-        <b>Title: </b> Research Assistant
+        <b>Title:</b> Biomedical Engineer Intern
       </div>
-      <div className="text-black dark:text-white">
-        <b>Mentor: </b>
-        <a
-          href="https://www.linkedin.com/in/li-su-a38a8a78/"
-          // href="" "https://homepage.iis.sinica.edu.tw/pages/lisu/index_zh.html"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-500 hover:underline dark:text-blue-300"
-        >
-          Prof. Li Su
-        </a>
-      </div>
-      <div className="text-black dark:text-white">
-        <b>Project: </b>
-        <a
-          href="https://github.com/buffett0323/query_ss.git"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-500 hover:underline dark:text-blue-300"
-        >
-          Query-Based Source Separation
-        </a>
-      </div>
+
       <div>
-        <b className="text-black dark:text-white">Dates: </b> Jun. 2024 - Aug. 2025
+        <b className="text-black dark:text-white">Dates: </b>Jul. 2023 - Aug. 2023
       </div>
+
+      <p className="mt-2 text-black dark:text-white">
+        <b>Description:</b> Tested medical laser and imaging systems and supported installation across multiple healthcare facilities, ensuring system performance and reliability.
+      </p>
     </div>,
-    ACADEMIA,
-  ],
-  [
-    <a
-      href="https://www.cienet.com/zh-hant/overview"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-blue-500 hover:underline dark:text-blue-300"
-    >
-      CIeNET Technology
-    </a>,
-    <div>
-      <div className="text-black dark:text-white">
-        <b>Title: </b> Engineering Intern
-      </div>
-      <div className="text-black dark:text-white">
-        <b>Mentor: </b>
-        <a
-          href="https://www.linkedin.com/in/jimmy-hsieh-12219b178/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-500 hover:underline dark:text-blue-300"
-        >
-          Jimmy Hsieh
-        </a>
-      </div>
-      <div>
-        <b className="text-black dark:text-white">Dates: </b> Dec. 2023 - Jun. 2024
-      </div>
-    </div>,
-    CIENET,
-  ],
-  [
-    <a
-      href="https://www.nstc.gov.tw/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-blue-500 hover:underline dark:text-blue-300"
-    >
-      National Science and Technology Council (NSTC)
-    </a>,
-    <div>
-      <div className="text-black dark:text-white">
-        <b>Title: </b> Undergraduate Researcher
-      </div>
-      <div className="text-black dark:text-white">
-        <b>Mentor: </b>
-        <a
-          href="https://wenlab501.github.io/iGEAR/people_pi.html"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-500 hover:underline dark:text-blue-300"
-        >
-          Prof. Tzai-Hung Wen
-        </a>
-      </div>
-      <div className="text-black dark:text-white">
-        <b>Project: </b>
-        <a
-          href="https://github.com/buffett0323/BS_Thesis.git"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-500 hover:underline dark:text-blue-300"
-        >
-          Human Mobility Prediction
-        </a>
-      </div>
-      <div>
-        <b className="text-black dark:text-white">Dates: </b> Sep. 2023 – Apr. 2024
-      </div>
-    </div>,
-    NSTC,
+    TBMS,
   ],
 ];
-
-
 
 const projectData: IndustryDataType[] = [
-    [
-        <a
-        href="https://github.com/buffett0323/graphrag_news_article.git"
+  [
+  <div className="text-blue-500 dark:text-blue-300">
+    1. 1. Standardization of Platelet Lysate Processing and Extracellular Vesicle Isolation (MethodsX)
+  </div>,
+  <div>
+    <div className="text-black dark:text-white">
+      <b>Supervisor: </b>
+      <a
+        href="https://hub.tmu.edu.tw/en/persons/david-j-lundy/"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-blue-500 hover:underline dark:text-blue-300"
-        >
-        1. <b>InsightLink</b>: An LLM-Powered Content Analysis Assistant
-        </a>,
-        <div>
-        <div className="text-black dark:text-white">
-            <b>{'Advisor: '}</b>
-            <a
-            href="http://polab.im.ntu.edu.tw/Bio.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-500 hover:underline dark:text-blue-300"
-            >
-            Chia-Yen Lee (李家岩)
-            </a>
-            ,{' '}
-            <a
-            href="https://www.linkedin.com/in/tzufen-chang-9082b027"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-500 hover:underline dark:text-blue-300"
-            >
-            Tzu-Fen Chang
-            </a>
-        </div>
-        <div>
-            <b className="text-black dark:text-white">{'Dates: '}</b>
-            Jan. 2024 - Dec. 2024
-        </div>
-        <div>
-            <b className="text-black dark:text-white">{'Description: '}</b>
-        </div>
-        <ul className="ml-6 list-disc list-inside text-black dark:text-white">
-            <li>
-                <a href="https://docs.google.com/document/d/1OyaY9eteqoIlhMbj2NIpr0IEKBxsndb4tX-EshMHLKM/edit?tab=t.0" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline">[Final report] </a>
-                Collaborated with a team of 6 and California State University, Bakersfield to develop a <b>GraphRAG-based</b> news analysis tool, enabling efficient insight extraction from large datasets and reducing manual effort in social science research.
-            </li>
-            <li>
-                Pre-processed and generated QA pairs on news articles data to <b>fine-tune GPT-4o-mini</b> within the GraphRAG framework.
-            </li>
-        </ul>
-        </div>,
-        InsightLink_Framework,
-    ],
-    [
-      <a
-      href="https://github.com/buffett0323/query_ss.git"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-blue-500 hover:underline dark:text-blue-300"
+        className="text-blue-500 hover:underline"
       >
-      2. Music Query-based Source Separation
-      </a>,
-      <div>
-        <div className="text-black dark:text-white">
-            <b>{'Advisor: '}</b>
-            <a
-            href="https://www.linkedin.com/in/li-su-a38a8a78/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-500 hover:underline dark:text-blue-300"
-            >
-            Su Li (蘇黎)
-            </a>
-        </div>
-        <div>
-            <b className="text-black dark:text-white">{'Dates: '}</b>
-            Jul. 2024 - Oct. 2024
-        </div>
-        <div>
-            <b className="text-black dark:text-white">{'Description: '}</b>
-        </div>
-        <ul className="ml-6 list-disc list-inside text-black dark:text-white">
-            <li>
-              This project introduces a novel audio-query-based source separation approach, leveraging the Band-Split Mamba model and advanced latent diffusion techniques to overcome the limitations of traditional source separation methods.
-            </li>
-        </ul>
-      </div>,
-      QBSS,
-    ],
-    [
+        David J. Lundy
+      </a>
+    </div>
+
+    <div>
+      <b className="text-black dark:text-white">Dates: </b>
+      Feb. 2024 – Jun. 2024
+    </div>
+
+    <div>
+      <b className="text-black dark:text-white">Description: </b>
+    </div>
+
+    <ul className="ml-0 list-disc list-inside text-black dark:text-white">
+      <li>
+        Contributed to the <b>standardization of platelet lysate processing workflows</b> (SCPL, FTPL, PPL, HPPL) for reproducible biomaterial preparation.
+      </li>
+      <li>
+        Consolidated existing laboratory procedures into a <b>structured and reproducible protocol framework</b> for extracellular vesicle (EV) isolation.
+      </li>
+      <li>
+        Supported development of <b>consistent and scalable workflows</b> to improve reproducibility across experimental batches.
+      </li>
+      <li>
+        Organized and refined protocol documentation for <b>peer-reviewed publication in MethodsX</b>.
+      </li>
+      <li>
+        Gained experience in <b>SOP development, process standardization, and experimental reproducibility</b>.
+      </li>
+    </ul>
+  </div>,
+  MethodX,
+  ],
+  [
+  <div className="text-blue-500 dark:text-blue-300">
+    2. Gene Expression Profiling of Macrophages with Extracellular Vesicles
+  </div>,
+  <div>
+    <div className="text-black dark:text-white">
+      <b>Supervisor: </b>
       <a
-      href="https://github.com/buffett0323/IMV_NTU_2024.git"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-blue-500 hover:underline dark:text-blue-300"
+        href="https://hub.tmu.edu.tw/en/persons/david-j-lundy/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-blue-500 hover:underline"
       >
-      3. <b>CarbonSeeker 2.0</b>: Innovative Web Solutions for Agriculture (2024 IMV Contest)
-      </a>,
-      <div>
-        <div className="text-black dark:text-white">
-            <b>{'Advisor: '}</b>
-            <a
-            href="https://www.geog.ntu.edu.tw/index.php/en/people/professors?id=896"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-500 hover:underline dark:text-blue-300"
-            >
-            Jr-Chuan Huang (黃誌川)
-            </a>
-        </div>
-        <div>
-            <b className="text-black dark:text-white">{'Dates: '}</b>
-            Jul. 2024 - Nov. 2024
-        </div>
-        <div>
-            <b className="text-black dark:text-white">{'Description: '}</b>
-        </div>
-        <ul className="ml-6 list-disc list-inside text-black dark:text-white">
-            <li>
-                Advanced to the contest <b>semifinals</b> by building a digital transaction platform for agricultural goods in 2 months using <b>TypeScript (React)</b>, <b>Node.js</b>, and <b>MongoDB</b>, deployed via Render and Vercel.
-            </li>
-            <li>
-                Developed a <b>Selenium</b> web crawler for real-time vegetable prices to optimize fertilizer ratios for carbon reduction.
-            </li>
-        </ul>
-      </div>,
-      IMV_Framework,
-    ],
-    [
+        David J. Lundy
+      </a>
+    </div>
+    <div>
+      <b className="text-black dark:text-white">Dates: </b>
+      Sep. 2023 – Jan. 2024
+    </div>
+    <div>
+      <b className="text-black dark:text-white">Description: </b>
+    </div>
+    <ul className="ml-0 list-disc list-inside text-black dark:text-white">
+      <li>
+        Evaluated <b>gene expression profiles</b> in bone marrow–derived macrophages following treatment with extracellular vesicles.
+      </li>
+      <li>
+        Quantified the impact of <b>platelet lysate–derived EVs</b> on inflammatory (M1) and anti-inflammatory (M2) markers.
+      </li>
+      <li>
+        Interpreted experimental results to identify <b>EV-driven modulation of macrophage polarization</b>, and presented findings in a competitive research setting.
+      </li>
+    </ul>
+  </div>,
+  SCPL,
+  ],
+  [
+  <div className="text-blue-500 dark:text-blue-300">
+    3. Age-Related Changes in Plasma Extracellular Vesicles and Macrophage Response
+  </div>,
+  <div>
+    <div className="text-black dark:text-white">
+      <b>Supervisor: </b>
       <a
-      href="https://github.com/buffett0323/Traffic-Simulation-Crowd-Evacuation-at-Taipei-Dome.git"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-blue-500 hover:underline dark:text-blue-300"
+        href="https://hub.tmu.edu.tw/en/persons/david-j-lundy/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-blue-500 hover:underline"
       >
-      4. Traffic Simulation at Taipei Dome Area with NetLogo
-      </a>,
-      <div>
-        <div className="text-black dark:text-white">
-            <b>{'Advisor: '}</b>
-            <a
-            href="https://wenlab501.github.io/iGEAR/people_pi.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-500 hover:underline dark:text-blue-300"
-            >
-            Tzai-Hung Wen (溫在弘)
-            </a>
-        </div>
-        <div>
-            <b className="text-black dark:text-white">{'Dates: '}</b>
-            Sep. 2022 - Dec. 2022
-        </div>
-        <div>
-            <b className="text-black dark:text-white">{'Description: '}</b>
-        </div>
-        <ul className="ml-6 list-disc list-inside text-black dark:text-white">
-            <li>
-              This project presents a simplified traffic flow simulation focused on the Taipei Dome Area. Using the <b>NetLogo</b> environment, this model aims to simulate and analyze traffic dynamics under various scenarios.
-            </li>
-        </ul>
-      </div>,
-      area_pic,
-    ],
-    
+        David J. Lundy
+      </a>
+    </div>
+    <div>
+      <b className="text-black dark:text-white">Dates: </b>
+      Jan. 2023 – Jun. 2023
+    </div>
+    <div>
+      <b className="text-black dark:text-white">Description: </b>
+    </div>
+    <ul className="ml-0 list-disc list-inside text-black dark:text-white">
+      <li>
+        Investigated <b>age-dependent changes</b> in extracellular vesicle (EV) composition in mouse plasma, including size, concentration, and miRNA cargo.
+      </li>
+      <li>
+        Evaluated the effects of <b>young vs. aged EVs</b> on bone marrow–derived macrophages (BMDMs), focusing on inflammatory (M1) and anti-inflammatory (M2) gene expression.
+      </li>
+      <li>
+        Identified <b>differential immunomodulatory responses</b>, where aged plasma induced stronger pro-inflammatory signaling, while isolated EVs exhibited distinct and more complex regulatory effects.
+      </li>
+      <li>
+        Demonstrated that EVs function as a <b>separate regulatory component</b> from whole plasma, with implications for aging-related inflammation and therapeutic strategies.
+      </li>
+    </ul>
+  </div>,
+  BMDM,
+  ],
+  [
+  <a
+    href="https://www.lundylab.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-500 hover:underline dark:text-blue-300"
+  >
+    4. Decellularized Pericardium Biomaterials Study (Published Outcome)
+  </a>,
+  <div>
+    <div className="text-black dark:text-white">
+      <b>Supervisor: </b>
+      <a
+        href="https://hub.tmu.edu.tw/en/persons/david-j-lundy/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-blue-500 hover:underline"
+      >
+        David J. Lundy
+      </a>
+    </div>
+    <div>
+      <b className="text-black dark:text-white">Dates: </b>Sep. 2022 - Jan. 2024
+    </div>
+    <div>
+      <b className="text-black dark:text-white">Description: </b>
+    </div>
+    <ul className="ml-6 list-disc list-inside text-black dark:text-white">
+      <li>
+        Participated in a biomaterials research project involving <b>decellularized pericardium</b> for cardiac repair, resulting in a <b>peer-reviewed publication</b>.
+      </li>
+      <li>
+        Conducted <b>sample preparation</b> and supported experimental workflows for extracellular vesicle (EV) studies.
+      </li>
+      <li>
+        Performed <b>ImageJ-based data analysis</b> and assisted in organizing experimental results and figure preparation.
+      </li>
+      <li>
+        Collaborated within a <b>structured lab environment</b> following standardized research protocols.
+      </li>
+    </ul>
+  </div>,
+  PericardiumPatch,
+  ],
+  [
+  <div className="text-blue-500 dark:text-blue-300">
+    5. Electrospinning and Characterization of Porous Biomaterials
+  </div>,
+  <div>
+    <div className="text-black dark:text-white">
+      <b>Supervisor: </b>David J. Lundy
+    </div>
+    <div>
+      <b className="text-black dark:text-white">Dates: </b>
+      Feb. 2022 - Jun. 2024
+    </div>
+    <div>
+      <b className="text-black dark:text-white">Description: </b>
+    </div>
+    <ul className="ml-0 list-disc list-inside text-black dark:text-white">
+      <li>
+        Learned how to Fabricate <b>porous biomaterial scaffolds</b> using electrospinning, controlling key parameters such as voltage, tip-to-collector distance, and environmental conditions.
+      </li>
+      <li>
+        Optimized processing conditions to achieve stable fiber formation and consistent scaffold morphology.
+      </li>
+      <li>
+        Acquired <b>scanning electron microscopy (SEM)</b> images to characterize fiber structure and surface morphology.
+      </li>
+      <li>
+        Performed <b>quantitative ImageJ analysis</b> to measure pore size distribution (average ~0.93 μm.
+      </li>
+      <li>
+        Established foundational understanding of <b>structure–property relationships</b> in tissue engineering scaffolds.
+      </li>
+    </ul>
+  </div>,
+  ElectrospinningProject,
+  ],
 ];
+
 
   
 const researchData = [
-[
-    <a
-    href="http://www.apsipa.org/friendlab/Application/FriendLab.asp?user=citimaclab@gmail.com"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-blue-500 hover:underline dark:text-blue-300"
-    >
-    Music and Audio Computing Lab, Academia Sinica
-    </a>,
-    <div>
-    <div className="text-black dark:text-white">
-        <b>{'Advisor: '}</b>
-        <a
-        href="https://www.ee.ntu.edu.tw/profile1.php?id=1090726"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-500 hover:underline dark:text-blue-300"
-        >
-        Yi-Hsuan Yang (楊奕軒)
-        </a>
-        ,{' '}
-        <a
-        href="https://homepage.iis.sinica.edu.tw/pages/lisu/contact_en.html"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-500 hover:underline dark:text-blue-300"
-        >
-        Li Su (蘇黎)
-        </a>
-    </div>
-    <div>
-        <b className="text-black dark:text-white">{'Dates: '}</b>
-        Jan. 2024 - Aug. 2025
-    </div>
-    <div>
-        <b className="text-black dark:text-white">{'Projects: '}</b>
-    </div>
-    <ul className="ml-4 list-disc">
-      <li>
-        Proposed a novel end-to-end <b>factorized codec</b> learning framework for timbre/style transfer models with information perturbation and supervision, achieving enhanced timbre-content-ADSR <b>disentanglement</b> for controllable synthesizer preset conversion and surpassing state-of-the-art synthesizer timbre transfer baselines with a multi-resolution STFT loss from 5.69 to <b>2.22</b>. <a href="https://buffett0323.github.io/synthcloner/" className="text-blue-600 italic" target="_blank" rel="noopener noreferrer">[GitHub]</a>
-      </li>
-      <li>
-        Developed an audio-query music <b>source separation</b> system using band-split <b>Mamba2</b> with hypernetwork conditioning, enhancing timbre conditioning and boosting instrument-specific SNR by 7%.
-      </li>
-    </ul>
-    </div>,
-],
-[
-    <a
-    href="http://polab.im.ntu.edu.tw/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-blue-500 hover:underline dark:text-blue-300"
-    >
-    Productivity Optimization Lab, NTU
-    </a>,
-    <div>
-    <div className="text-black dark:text-white">
-        <b>{'Advisor: '}</b>
-        <a
-        href="http://polab.im.ntu.edu.tw/Bio.html"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-500 hover:underline dark:text-blue-300"
-        >
-        Chia-Yen Lee (李家岩)
-        </a>
-        ,{' '}
-        <a
-        href="https://www.linkedin.com/in/tzufen-chang-9082b027"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-500 hover:underline dark:text-blue-300"
-        >
-        Tzu-Fen Chang
-        </a>
-    </div>
-    <div>
-        <b className="text-black dark:text-white">{'Dates: '}</b>
-        Dec. 2023 - Dec. 2024
-    </div>
-    <div>
-        <b className="text-black dark:text-white">{'Projects: '}</b> 
-    </div>
-    <ul className="ml-4 list-disc">
-      <li>
-        Collaborated with a team of 6 to develop a <b>GraphRAG</b>-based news content analysis tool, leveraging <b>LLMs</b> for insight extraction from large datasets and reducing manual effort in social science research. <a href="https://github.com/buffett0323/graphrag_news_article.git" className="text-blue-600 italic" target="_blank" rel="noopener noreferrer">[GitHub]</a>
-      </li>
-      <li>
-        Applied <b>NLP</b> techniques such as LDA and NMF to analyze attitude shifts surrounding the 2021 Atlanta spa shootings.
-      </li>
-    </ul>
-    </div>,
-],
-[
-    <a
-    href="https://homepage.ntu.edu.tw/~wenthung/index.htm"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-blue-500 hover:underline dark:text-blue-300"
-    >
-    Geospatial Computing Lab, NTU
-    </a>,
-    <div>
-    <div className="text-black dark:text-white">
-        <b>{'Advisor: '}</b>
-        <a
-        href="https://wenlab501.github.io/iGEAR/people_pi.html"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-500 hover:underline dark:text-blue-300"
-        >
-        Tzai-Hung Wen (溫在弘)
-        </a>
-    </div>
-    <div>
-        <b className="text-black dark:text-white">{'Dates: '}</b>
-        Jan. 2022 - Jun. 2024
-    </div>
-    <div>
-        <b className="text-black dark:text-white">{'Projects: '}</b>
-    </div>
-    <ul className="ml-4 list-disc">
-        <li>
-            <b>[B.S. Thesis] </b>
-            <a
-                href="https://github.com/buffett0323/BS_Thesis.git"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500 hover:underline dark:text-blue-300"
-            >
-                Trip-purpose-based methods for predicting human mobility’s next location
-            </a>
-        </li>
-        <li>
-        Developed <b>multimodal spatio-temporal</b> models with a trip-purpose approach, achieving <b>80% accuracy</b>, and designed a data pipeline to integrate mobility data, Google Maps polygons, and remote sensing datasets for spatial analysis.
-        </li>
-        <li>
-          Reached IMV contest semifinals by building a digital transaction platform with <b>TypeScript (React)</b>, <b>Node.js</b>, and <b>MongoDB</b>, and developing a <b>Selenium</b> web crawler for real-time vegetable prices to optimize fertilizer use. <a href="https://github.com/buffett0323/IMV_NTU_2024.git" className="text-blue-600 italic" target="_blank" rel="noopener noreferrer">[GitHub]</a>
-        </li>
-        <li>
-          Simulated 3D crowd and vehicle flows in <b>NetLogo</b> and Python for safer Taipei Dome evacuations, informing exit planning.
-        </li>
-    </ul>
-    </div>,
-],
-
-];
-
-const taData = [
   [
     <a
-      href="https://www.csie.ntu.edu.tw/~htlin/course/ml23fall/"
+      href="https://www.lundylab.com/"
       target="_blank"
       rel="noopener noreferrer"
       className="text-blue-500 hover:underline dark:text-blue-300"
     >
-      Machine Learning, NTU
+      David Lundy's Lab, Taipei Medical University
     </a>,
     <div>
-    <div className="text-black dark:text-white">
-        <b>{'Mentor: '}</b>
+      <div className="text-black dark:text-white">
+        <b>Title:</b> Undergraduate Researcher
+      </div>
+
+      {/*Supervisor */}
+      <div className="text-black dark:text-white">
+        <b>Supervisor:</b>{' '}
         <a
-        href="https://www.csie.ntu.edu.tw/~htlin/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-500 hover:underline dark:text-blue-300"
-        >
-        Hsuan-Tien Lin (林軒田)
-        </a>
-    </div>
-    <div>
-        <b className="text-black dark:text-white">{'Dept: '}</b>
-        <a
-        href="https://www.csie.ntu.edu.tw//?locale=en"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-500 hover:underline dark:text-blue-300"
-        >        
-        Computer Science & Information Engineering, NTU
-        </a>
-    </div>
-    <div>
-        <b className="text-black dark:text-white">{'Dates: '}</b>
-        Jan. 2023 – Jan. 2024 (<b>2 semesters</b>)
-    </div>
-    
-    <div>
-        <b className="text-black dark:text-white">{'Content: '}</b>
-    </div>
-    <ul className="ml-4 list-disc">
-      <li>
-        Designed assignments & projects, and led TA sessions in English to support students with problem-solving and queries.
-      </li>
-      <li>
-        Conceived and led the {' '}
-        <a
-          href="https://drive.google.com/file/d/15_Zq-RQpNGXFjYSnHqSP1oA6xFjR6V-m/view?usp=sharing"
+          href="https://hub.tmu.edu.tw/en/persons/david-j-lundy/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-500 hover:underline dark:text-blue-300"
-        >final project
-        </a>, originating from my idea.
-        Utilized Generative Adversarial Networks(GANs) to generate a noisier dataset based on the original, increasing task difficulty in a student final project, then applied machine learning models to establish baselines. {' '}
-      </li>
-    </ul>
-    </div>,
-  ],
-  [
-    <a
-      href="https://nol.ntu.edu.tw/nol/coursesearch/print_table.php?lang=EN&course_id=208%2011510&class=&dpt_code=2080&ser_no=69731&semester=110-2"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-blue-500 hover:underline dark:text-blue-300"
-    >
-      Computer Programming, NTU
-    </a>,
-    <div>
-    <div className="text-black dark:text-white">
-        <b>{'Mentor: '}</b>
-        <a
-        href="https://wenlab501.github.io/iGEAR/people_pi.html"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-500 hover:underline dark:text-blue-300"
+          className="text-blue-500 hover:underline"
         >
-        Tzai-Hung Wen (溫在弘)
+          David J. Lundy
         </a>
-    </div>
-    <div>
-        <b className="text-black dark:text-white">{'Dept: '}</b>
-        <a
-        href="https://www.geog.ntu.edu.tw/index.php/en/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-500 hover:underline dark:text-blue-300"
-        >        
-        Geography, NTU
-        </a>
-    </div>
-    <div>
-        <b className="text-black dark:text-white">{'Dates: '}</b>
-        Feb. 2022 – Jun. 2022
-    </div>
-    
-    <div>
-        <b className="text-black dark:text-white">{'Content: '}</b>
-    </div>
-    <ul className="ml-4 list-disc">
-      <li>
-        Led coding exercises, explained programming logic, and graded assignments & exams.
-      </li>
-    </ul>
+      </div>
+
+      <div>
+        <b className="text-black dark:text-white">Dates: </b>Feb. 2022 - Jun. 2024
+      </div>
+
+      <p className="mt-2 text-black dark:text-white">
+        <b>Description:</b> Conducted research on extracellular vesicles and platelet lysate for therapeutic applications, performed RT-qPCR analysis, and co-authored publications in <b>Biomaterials</b> and <b>Immunity &amp; Ageing</b>.
+      </p>
     </div>,
   ],
 ];
 
+const adminData = [
+  [
+    <a
+      href="https://eng.tmu.edu.tw/Front/Academic/Management/Page.aspx?id=rLpFhefWvVw="
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-500 hover:underline dark:text-blue-300"
+    >
+      Taipei Medical University, College of Management
+    </a>,
+    <div>
+      <div className="font-semibold text-lg text-black dark:text-white">
+        Title: Administrative Assistant (Part-time)
+      </div>
 
-const openReviewData = [
-  [
-    <a
-      href="https://aiformusicworkshop.github.io/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-blue-500 hover:underline dark:text-blue-300"
-    >
-      NeurIPS AI Music 2025
-    </a>,
-    <div>
-      <div className="text-black dark:text-white">
-        <b>{'Conference: '}</b>
-        NeurIPS Workshop on AI for Music
-      </div>
       <div>
-        <b className="text-black dark:text-white">{'Dates: '}</b>
-        2025
+        <b className="text-black dark:text-white">Dates: </b>Oct. 2021 - Jan. 2024
       </div>
-      <div>
-        <b className="text-black dark:text-white">{'Description: '}</b>
-      </div>
-      <ul className="ml-6 list-disc list-inside text-black dark:text-white">
-        <li>
-          Reviewing submissions for the NeurIPS Workshop on AI for Music 2025.
-        </li>
-      </ul>
+
+      <p className="mt-2 text-black dark:text-white">
+        <b>Description:</b> Supported administrative operations, scheduling, and documentation for academic programs, ensuring smooth coordination and daily office workflow.
+      </p>
     </div>,
-  ],
-  [
-    <a
-      href="https://2026.ieeeicassp.org/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-blue-500 hover:underline dark:text-blue-300"
-    >
-      ICASSP 2026
-    </a>,
-    <div>
-      <div className="text-black dark:text-white">
-        <b>{'Conference: '}</b>
-        IEEE International Conference on Acoustics, Speech and Signal Processing
-      </div>
-      <div>
-        <b className="text-black dark:text-white">{'Dates: '}</b>
-        2026
-      </div>
-      <div>
-        <b className="text-black dark:text-white">{'Description: '}</b>
-      </div>
-      <ul className="ml-6 list-disc list-inside text-black dark:text-white">
-        <li>
-          Reviewing submissions for ICASSP 2026.
-        </li>
-      </ul>
-    </div>,
+    TMUManagement,
   ],
 ];
 
@@ -653,4 +344,4 @@ const researchInterests = [
   'Natural Language Processing',
 ];
 
-export { industryData, projectData, researchData, taData, openReviewData, researchInterests };
+export { industryData, projectData, researchData, adminData, researchInterests };

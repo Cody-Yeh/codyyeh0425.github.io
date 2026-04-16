@@ -21,8 +21,8 @@ export default function Navbar() {
     ['Experience', '/experience'],
     ['Projects', '/project'],
     ['Publications', '/publication'],
-    ['Resume/CV', '/Buffett_CV.pdf'],
-    ['DJ_Resume', '/DJ_Buffett_Resume.pdf'],
+    ['Resume', '/Cody_Resume.pdf'],
+    ['Extracurriculars', '/extracurricular'],
   ];
 
   const barHeight: number = 48;
@@ -106,26 +106,7 @@ export default function Navbar() {
                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
                 </svg>
               </a>
-
-              <a
-                href={generalData.googleScholar}
-                aria-label="Google Scholar"
-                className="rounded-lg p-2 hover:bg-white hover:shadow-lg hover:dark:bg-gray-800"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  className="bi bi-mortarboard h-5 w-5"
-                  viewBox="0 0 16 16"
-                >
-                  <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3.5a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5ZM8 8.46 1.758 5.5 8 2.54l6.242 2.96L8 8.46Z"/>
-                  <path d="M4.176 9.032a.5.5 0 0 1 .292.643l-1.5 4a.5.5 0 1 1-.936-.35l1.5-4a.5.5 0 0 1 .644-.293Zm7.648 0a.5.5 0 0 1 .644.293l1.5 4a.5.5 0 1 1-.936.35l-1.5-4a.5.5 0 0 1 .292-.643Z"/>
-                </svg>
-              </a>
+              
 
               <a
                 href={generalData.linkedin}

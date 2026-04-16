@@ -3,9 +3,9 @@ import Contact from '../components/About/Contact';
 import Description from '../components/About/Description';
 import Education from '../components/About/Education';
 import { title } from '../constants/about';
-// import buffett from '../public/handsome_buffett.jpg'; 
-import buffett from '../public/buffett.png';
+import cody from '../public/Cody_Photo.png';
 import Image from 'next/image';
+import Certifications from '../components/About/Certifications';
 
 function About() {
   return (
@@ -15,7 +15,7 @@ function About() {
           <h1 className="text-center text-4xl font-bold sm:text-5xl">About Me</h1>
           <div className="hidden h-32 w-32 overflow-hidden rounded-full sm:block md:h-40 md:w-40">
             <Image
-              src={buffett}
+              src={cody}
               alt="avatar"
               className="object-cover"
               sizes="(max-width: 768px) 160px, 160px"
@@ -32,6 +32,7 @@ function About() {
         <div className="mx-auto mt-10 box-border flex w-full flex-col items-center space-y-16 px-5 max-sm:px-0">
           <Description />
           <Education />
+          <Certifications />
           <Awards />
           <Contact />
         </div>

@@ -1,173 +1,101 @@
-import NTU from '../public/logos/ntu.jpeg';
-import NTUGEOG from '../public/logos/ntugeog.jpeg';
-import NTUIM from '../public/logos/ntuim.png';
-import CMU from '../public/logos/cmu.png';
+import UofT from '../public/logos/uoft.png';
+import TMU from '../public/logos/tmu.png';
 
 const descriptionData = [
   <>
-    My name is <b>Jeng-Yue (Buffett) Liu 劉正悦</b>. I am now a student at Carnegie Mellon University pursuing a Master's degree in Artificial Intelligence and Innovation under the School of Computer Science.
-    I was a research assistant working with {' '}
+    My name is <b>Wei-Ting (Cody) Yeh 葉威廷</b>. I am a Materials Science & Engineering graduate based in Toronto, with a background in Biomedical Engineering and hands-on experience in medical device systems, equipment testing, and process-related engineering work.
+     </>,
+  <>
+    I have worked with clinical monitoring devices, imaging systems, and medical laser equipment, focusing on functional testing, performance verification, and equipment reliability. During my internship at{' '}
     <a
-      href="https://www.ee.ntu.edu.tw/profile1.php?id=1090726"
+      href="https://www.tbms.com.tw/en-us/"
       target="_blank"
       rel="noopener noreferrer"
       className="text-blue-500 hover:underline"
     >
-      Prof. Yi-Hsuan Yang
+      TBMS International Corporation
     </a>
-    {' '} and {' '}
-    <a
-      href="https://homepage.iis.sinica.edu.tw/pages/lisu/contact_en.html"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-blue-500 hover:underline"
-    >
-      Prof. Li Su
-    </a>
-    {' '} at the{' '}
-    <a
-      href="http://www.apsipa.org/friendlab/Application/FriendLab.asp?user=citimaclab@gmail.com"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-blue-500 hover:underline"
-    >
-      Music and Audio Computing Lab, Academia Sinica
-    </a>
-    . Additionally, I served as a Machine Learning Engineer intern at {' '}
-    <a
-      href="https://www.quid.com/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-blue-500 hover:underline"
-    >
-      Quid
-    </a>
-    . I hold dual Bachelor’s degree in Information Management (B.B.A.) and Geography (B.S.) from National Taiwan University.
+    , I performed preventive maintenance, troubleshooting, and supported installation and commissioning of medical devices across clinical environments.
   </>,
   <>
-    My research mainly focuses on Music Information Retrieval and Music Generation. I explore:
-    <br /><br />
-    • Timbre/Content/ADSR disentanglement in Synthesizer Preset Conversion
-    <br />
-    • Query-conditioned Source Separation
-    <br />
-    • Text-to-Music Generation
-    <br /><br />
+    In addition, I gained experience in hospital settings, supporting device verification and equipment-related work at{' '}
+    <a
+      href="https://web.hosp.ncku.edu.tw/nckm/english/HomeStyle.aspx?Type=11&ContentPage=0"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-500 hover:underline"
+    >
+      National Cheng Kung University Hospital
+    </a>
+    . My technical background also includes SEM characterization and data analysis using Python, Excel, and GraphPad Prism.
   </>,
   <>
-    <b>I am now actively seeking for an internship in SWE/MLE starting in Summer 2026 and am excited to connect with and learn from engineers and researchers who share similar interests!</b>
+    <b>I am particularly interested in process improvement, equipment reliability, and quality engineering, and I am currently seeking opportunities in the medical device or manufacturing industry.</b>
   </>,
 ];
 
-const musicData = [
-  <>
-    <b>Music</b> has always been my universal language—a powerful way to connect with people beyond words. As a party DJ with over five years of experience, I thrive on creating electrifying atmospheres that captivate audiences. There’s nothing quite like seeing a crowd lose themselves in the music, dancing with unrestrained joy and energy. It’s this magical connection that draws me back to the stage time and time again.
-  </>,
-  <>
-    Beyond performing, I co-manage a music bar that celebrates Taiwanese hip-hop while blending it with global music influences. This venture has been transformative, offering opportunities to engage with people from diverse cultural backgrounds. It has broadened my worldview and deepened my cultural sensitivity, allowing me to appreciate the unifying power of music even further.
-  </>,
-  <>
-    My passion extends beyond performance—I am equally fascinated by the intersection of <b>AI and music</b>. DJing is more than syncing beats; it’s about reading the crowd, understanding the energy, and adapting in real time. This inspired me to explore AI-powered DJ controllers that analyze crowd reactions and track energy levels, helping DJs maintain peak performance and seamless transitions. I envision pushing this innovation further to revolutionize the performing arts industry with AI-driven solutions that enhance creativity and engagement.
-  </>,
-  <>
-    <b>Teamwork</b> has been a cornerstone of my journey. From playing in school bands to leading the Geography Student Association during university, collaboration has always been at the heart of what I do. Whether organizing high school camps, cross-university events, or national sports competitions, I learned invaluable lessons in leadership, coordination, and adaptability. These experiences shaped me into a driven, resourceful individual, ready to tackle new challenges.
-  </>,
-  <>
-    Music, innovation, and collaboration define who I am. I am eager to continue channeling these passions to connect with others, drive positive change, and create impactful experiences.
-  </>,
-
-];
 
 const title = (
   <b>
-    Machine Learning Researcher & Engineer
+    Materials & Biomedical Engineering
+    <br />
+    Process, Quality & Equipment
   </b>
 );
 
 const educationData = [
   {
-    university: "Carnegie Mellon University (CMU)",
-    link: "https://msaii.cs.cmu.edu/",
-    logo: CMU, // University Logo
-    degree_type: "School of Computer Science",
-    degree_name: "M.Sc. in Artificial Intelligence and Innovation",
-    period: "Aug. 2025 - May. 2027",
+    university: "University of Toronto(UofT)",
+    link: "https://www.utoronto.ca/",
+    logo: UofT,
+    degree_type: "Master of Engineering",
+    degree_name: "Materials Science & Engineering",
+    period: "2024 - 2025",
+    transcript: "/transcripts/uoft_transcript.pdf",
     gpa: [
-      {label: "Current Coursework", value: "26' Spring: Diffusion and Flow Matching (10-799), Advanced NLP (11-711), LLM Systems (11-868), Intro to Deep Learning (11-785), AI Engineering (11-695), AI Venture Studio (11-681) | 25' Fall: Intro to Machine Learning (10-601), Coding Bootcamp (11-601), Gen AI for Music & Audio (15-798), AI & Future Markets (11-651), Law of Computer Technology (17-762) | 25' Summer: Intro to Computer Systems (15-503)"},
-      // { label: "Overall GPA", value: "3.95 / 4.3" },
-      // { label: "CS-related GPA", value: "4.15 / 4.3" },
+      { label: "GPA", value: "3.74 / 4.0" },
+      {
+        label: "Relevant Courses",
+        value:
+          "Emerging Applications in Biomaterials, Smart Materials & Structures, Practical Aspects of Electron Microscopy, Forensic Engineering, Fundamentals of Chemical Engineering, Alternative Energy Systems",
+      },
     ],
   },
   {
-    university: "National Taiwan University (NTU)",
-    link: "https://www.ntu.edu.tw/english/",
-    logo: NTU, // University Logo
-    degree_type: "Dual Degree:",
-    degree_name: "B.B.A. in Information Management & B.S. in Geography",
-    period: "Sep. 2020 - Jun. 2025",
+    university: "Taipei Medical University",
+    link: "https://eng.tmu.edu.tw/",
+    logo: TMU,
+    degree_type: "Bachelor of Science",
+    degree_name: "Biomedical Engineering",
+    period: "2020 - 2024",
+    transcript: "/transcripts/tmu_transcript.pdf",
     gpa: [
-      { label: "Overall GPA", value: "3.95 / 4.3" },
-      { label: "CS-related GPA", value: "4.15 / 4.3" },
-    ],
-    departmentLogos: [
-      { name: "Information Management", logo: NTUIM }, 
-      { name: "Geography", logo: NTUGEOG }, 
+      { label: "GPA", value: "3.91 / 4.0" },
+      {
+        label: "Relevant Courses",
+        value:
+          "Medical Electronics, Medical Image Reconstruction & 3D Printing Techniques, Medical Device Regulations & Compliance (ISO 13485,FDA classification), Biostatistics",
+      },
     ],
   },
 ];
 
-
 const awardData = [
   [
     2024,
-    <a
-      href="https://drive.google.com/file/d/1FVo-PSHxnAQLR8L9LbPS7BQQo95WQnsF/view?usp=drive_link"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="hover:underline"
-    >
-      The Phi Tau Phi Scholastic Honor Society of the Republic of China
-    </a>,
-    'Inducted as an honorary member, recognizing the top 1% of students for outstanding academic performance at the university.',
-  ],
-  [
-    2024,
-    <a
-      href="https://drive.google.com/file/d/15d4d4eqw26YqYZncAev5_K-zWhZKW77u/view?usp=drive_link"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="hover:underline"
-    >
-      Bachelor Degree Thesis Award <br /> 
-      {/* (臺大學士論文獎)  */}
-    </a>,
-    'Ranked top 3 in department',
+    <>Honorable Mention – Special Research Final Oral Presentation</>,
+    <>
+      • Awarded by the Department of Biomedical Engineering for outstanding research presentation. <br />
+      • Research topic: Gene expression profiling in bone marrow-derived macrophages from mice upon incorporation of extracellular vesicles purified from serum-converted human platelet lysates.
+    </>,
   ],
   [
     2023,
-    <a
-      href="https://drive.google.com/file/d/1FsIT1Eiwh_B4h_gfFSWbUxC5w5FYwJ63/view?usp=drive_link"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="hover:underline"
-    >
-      NTU Presidential Award <br />
-      {/* (臺大校長獎)  */}
-    </a>,
-    'Ranked 1/49 in department',
-  ],
-  [
-    2023,
-    <a
-      href="https://drive.google.com/file/d/1p_h9Sx4lywC1N0eLBCFHUAA20uIgoNdz/view?usp=drive_link"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="hover:underline"
-    >
-      NTU Dean’s List Award <br />
-      {/* (臺大書卷獎)  */}
-    </a>,
-    'Twice',
+    <>Excellent Work Award – Special Research Final Oral Presentation</>,
+    <>
+      • Awarded by the Department of Biomedical Engineering. <br />
+      • Research topic: Changes in mouse blood plasma extracellular vesicles composition with age and their role in macrophage response to kidney injury.
+    </>,
   ],
 ];
 
@@ -191,7 +119,7 @@ const contactData = [
       href="mailto:philip910323@gmail.com"
       className="ml-10 basis-full break-words font-normal text-blue-500 hover:underline dark:text-blue-300 max-sm:ml-1"
     >
-      buffettl@andrew.cmu.edu{/* philip910323@gmail.com */}
+      codyyeh0425@gmail.com
     </a>
   </>,
   <>
@@ -205,10 +133,10 @@ const contactData = [
     </svg>
     <div className="max-sm:hidden">LinkedIn:</div>
     <a
-      href="https://www.linkedin.com/in/buffettliu/"
+      href="https://www.linkedin.com/in/wei-ting-yeh0425"
       className="ml-4 basis-full font-normal text-blue-500 hover:underline dark:text-blue-300 max-sm:ml-1"
     >
-      Jeng-Yue Liu
+      Cody Yeh
     </a>
   </>,
   <>
@@ -226,9 +154,9 @@ const contactData = [
       className="ml-8 basis-full font-normal text-blue-500 hover:underline dark:text-blue-300 max-sm:ml-1"
     >
       {/* (+886) 989-338-717 */}
-      (+1) 412-284-3635
+      (+1) 647-998-9962
     </a>
   </>,
 ];
 
-export { descriptionData, musicData, title, educationData, awardData, contactData };
+export { descriptionData, title, educationData, awardData, contactData };
