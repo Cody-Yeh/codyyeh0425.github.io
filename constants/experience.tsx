@@ -308,7 +308,7 @@ const researchData = [
   ],
 ];
 
-const adminData = [
+const adminData: IndustryDataType[] = [
   [
     <a
       href="https://eng.tmu.edu.tw/Front/Academic/Management/Page.aspx?id=rLpFhefWvVw="
