@@ -21,7 +21,7 @@ export default function App({ Component, pageProps }: CustomAppProps) {
   return (
     <ThemeProvider defaultTheme="light" attribute="class">
       <Head>
-        <title>Jeng-Yue Liu</title>
+        <title>Wei Ting Yeh</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#F1F1F1" />
         <meta name="description" content="Jeng-Yue Liu's personal website" />
