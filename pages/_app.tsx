@@ -21,22 +21,26 @@ export default function App({ Component, pageProps }: CustomAppProps) {
   return (
     <ThemeProvider defaultTheme="light" attribute="class">
       <Head>
-        <title>Wei Ting Yeh</title>
+        <title>Wei-Ting (Cody) Yeh</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#F1F1F1" />
-        <meta name="description" content="Jeng-Yue Liu's personal website" />
-        <meta property="og:title" content="Jeng-Yue Liu" />
-        <meta property="og:description" content="Jeng-Yue (Buffett) Liu's personal website" />
-        <meta httpEquiv="Permissions-Policy" content="interest-cohort=()"></meta>
+        <meta
+          name="description"
+          content="Wei-Ting (Cody) Yeh's personal portfolio website"
+        />
+        <meta property="og:title" content="Wei-Ting (Cody) Yeh" />
+        <meta
+          property="og:description"
+          content="Wei-Ting (Cody) Yeh's personal portfolio website"
+        />
+        <meta httpEquiv="Permissions-Policy" content="interest-cohort=()" />
       </Head>
 
       <>
         <Navbar />
         <div className="-z-50 mt-0 bg-[#F1F1F1] font-sans duration-500 dark:bg-gray-900">
           <Layout>
-            <>
-              <Component {...pageProps} />
-            </>
+            <Component {...pageProps} />
           </Layout>
         </div>
       </>
