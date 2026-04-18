@@ -7,6 +7,7 @@ import ElectrospinningProject from '../public/project_img/ElectrospinningProject
 import SCPL from '../public/project_img/SCPL.png';
 import BMDM from '../public/project_img/BMDM.png';
 import MethodX from '../public/project_img/MethodX.png';
+import TMU from '../public/logos/tmu.png';
 
 
 type IndustryDataType = [React.ReactNode, React.ReactNode, StaticImageData];
@@ -279,12 +280,12 @@ const researchData = [
     >
       David Lundy's Lab, Taipei Medical University
     </a>,
+
     <div>
       <div className="text-black dark:text-white">
         <b>Title:</b> Undergraduate Researcher
       </div>
 
-      {/*Supervisor */}
       <div className="text-black dark:text-white">
         <b>Supervisor:</b>{' '}
         <a
@@ -297,14 +298,17 @@ const researchData = [
         </a>
       </div>
 
-      <div>
-        <b className="text-black dark:text-white">Dates: </b>Feb. 2022 - Jun. 2024
+      <div className="text-gray-500 dark:text-gray-400">
+        <b className="text-black dark:text-white">Dates: </b>
+        Feb. 2022 - Jun. 2024
       </div>
 
       <p className="mt-2 text-black dark:text-white">
         <b>Description:</b> Conducted research on extracellular vesicles and platelet lysate for therapeutic applications, performed RT-qPCR analysis, and co-authored publications in <b>Biomaterials</b> and <b>Immunity &amp; Ageing</b>.
       </p>
     </div>,
+
+    TMU, // ✅ THIS WAS MISSING
   ],
 ];
 
@@ -316,15 +320,16 @@ const adminData: IndustryDataType[] = [
       rel="noopener noreferrer"
       className="text-blue-500 hover:underline dark:text-blue-300"
     >
-      Taipei Medical University, College of Management
+      Department of Management, Taipei Medical University 
     </a>,
     <div>
-      <div className="font-semibold text-lg text-black dark:text-white">
-        Title: Administrative Assistant (Part-time)
+      <div className="text-black dark:text-white">
+        <b>Title:</b> Administrative Assistant (Part-time)
       </div>
 
-      <div>
-        <b className="text-black dark:text-white">Dates: </b>Oct. 2021 - Jan. 2024
+      <div className="text-gray-500 dark:text-gray-400">
+        <b className="text-black dark:text-white">Dates: </b>
+        Oct. 2021 - Jan. 2024
       </div>
 
       <p className="mt-2 text-black dark:text-white">

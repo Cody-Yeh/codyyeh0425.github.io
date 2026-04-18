@@ -15,16 +15,26 @@ export default function AdministrativeExperience() {
           <tbody>
             {adminData.map((admin, idx) => (
               <MyTableRow key={idx} idx={idx}>
-                <th className="flex basis-1/4 items-center max-sm:basis-1/3">
-                  <Image
-                    src={admin[2]}
-                    alt="Organization logo"
-                    width={120}
-                    height={120}
-                    className="object-contain"
-                  />
+                {/* Logo */}
+                <th className="flex basis-1/6 items-center justify-center max-sm:basis-1/4">
+                  <div className="flex h-[90px] w-[90px] items-center justify-center">
+                    <Image
+                      src={admin[2]}
+                      alt="Organization logo"
+                      width={72}
+                      height={72}
+                      className="object-contain"
+                    />
+                  </div>
                 </th>
-                <td className="flex basis-3/4 items-center px-5 max-sm:basis-2/3">
+
+                {/* Department Name */}
+                <th className="flex basis-2/6 items-center text-blue-500 dark:text-blue-300 max-sm:basis-2/4">
+                  {admin[0]}
+                </th>
+
+                {/* Details */}
+                <td className="flex basis-3/6 items-center px-5 max-sm:basis-2/4">
                   {admin[1]}
                 </td>
               </MyTableRow>
