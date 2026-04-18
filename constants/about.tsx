@@ -3,10 +3,13 @@ import TMU from '../public/logos/tmu.png';
 
 const descriptionData = [
   <>
-    My name is <b>Wei-Ting (Cody) Yeh 葉威廷</b>. I am a Materials Science & Engineering graduate based in Toronto, with a background in Biomedical Engineering and hands-on experience in medical device systems, equipment testing, and process-related engineering work.
-     </>,
+    Hi, I’m <b>Wei-Ting (Cody) Yeh 葉威廷</b>, a Materials Science & Engineering graduate based in Toronto with a background in Biomedical Engineering.
+  </>,
   <>
-    I have worked with clinical monitoring devices, imaging systems, and medical laser equipment, focusing on functional testing, performance verification, and equipment reliability. During my internship at{' '}
+    I enjoy working at the intersection of medical devices, equipment systems, and process improvement. Through my internships, I’ve gained hands-on experience in device testing, performance verification, and supporting equipment reliability in clinical environments.
+  </>,
+  <>
+    During my internship at{' '}
     <a
       href="https://www.tbms.com.tw/en-us/"
       target="_blank"
@@ -15,10 +18,7 @@ const descriptionData = [
     >
       TBMS International Corporation
     </a>
-    , I performed preventive maintenance, troubleshooting, and supported installation and commissioning of medical devices across clinical environments.
-  </>,
-  <>
-    In addition, I gained experience in hospital settings, supporting device verification and equipment-related work at{' '}
+    , I worked on preventive maintenance, troubleshooting, and supported installation and commissioning of medical devices. I also gained hospital-based experience at{' '}
     <a
       href="https://web.hosp.ncku.edu.tw/nckm/english/HomeStyle.aspx?Type=11&ContentPage=0"
       target="_blank"
@@ -27,10 +27,18 @@ const descriptionData = [
     >
       National Cheng Kung University Hospital
     </a>
-    . My technical background also includes SEM characterization and data analysis using Python, Excel, and GraphPad Prism.
+    , supporting device verification and equipment-related tasks.
   </>,
   <>
-    <b>I am particularly interested in process improvement, equipment reliability, and quality engineering, and I am currently seeking opportunities in the medical device or manufacturing industry.</b>
+    My technical background includes SEM characterization and data analysis using Python, Excel, and GraphPad Prism.
+  </>,
+  <>
+    Outside of engineering, I enjoy playing basketball, going to the gym, and exploring new places.
+  </>,
+  <>
+    <b>
+      I am particularly interested in process improvement, equipment reliability, and quality engineering, and I am currently seeking opportunities in the medical device or manufacturing industry.
+    </b>
   </>,
 ];
 

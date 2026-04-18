@@ -14,7 +14,7 @@ export default function Extracurricular() {
         {/* TEXT */}
         <div className="text-black dark:text-white">
           <h2 className="text-2xl font-bold">
-            Taipei Medical University Maple Youth Medical Service Corps (楓杏青年服務團)
+            Taipei Medical University Feng Hsing Medical Service Corps (楓杏青年醫學服務團)
           </h2>
 
           <p className="mt-3">
