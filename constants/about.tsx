@@ -45,7 +45,7 @@ const title = (
 
 const educationData = [
   {
-    university: "University of Toronto(UofT)",
+    university: "University of Toronto",
     link: "https://www.utoronto.ca/",
     logo: UofT,
     degree_type: "Master of Engineering",

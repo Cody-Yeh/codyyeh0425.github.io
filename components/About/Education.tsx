@@ -4,72 +4,79 @@ import { educationData } from "../../constants/about";
 
 export default function Education() {
   return (
-    <div className="w-full rounded-lg bg-white px-4 py-12 shadow-md dark:bg-gray-800 sm:px-12">
-      <h1 className="mb-8 text-center text-3xl font-bold text-gray-700 dark:text-white">
+    <div className="w-full">
+      <h1 className="mb-12 text-center text-4xl font-bold tracking-[-0.02em] text-slate-800 dark:text-white">
         Education
       </h1>
-      <div className="overflow-x-auto">
-        <table className="min-w-full border-separate border-spacing-y-4 text-left text-base text-gray-700 dark:text-gray-300">
-          <tbody>
-            {educationData.map((education, idx) => (
-              <tr
-                key={idx}
-                className="rounded-lg bg-gray-50 shadow-sm dark:bg-gray-700"
-              >
-                <th className="w-1/3 p-4 align-top text-lg font-semibold text-blue-600 dark:text-blue-300">
-                  <a
-                    href={education.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-3 hover:underline"
-                  >
+
+      <div className="space-y-8">
+        {educationData.map((education, idx) => (
+          <div
+            key={idx}
+            className="rounded-2xl border border-gray-200 bg-white px-8 py-8 shadow-sm dark:border-gray-700 dark:bg-gray-800"
+          >
+            <div className="flex flex-col gap-8 md:flex-row">
+              {/* Left Column */}
+              <div className="flex w-full flex-col items-center text-center md:w-[220px] md:flex-shrink-0">
+                <a
+                  href={education.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-col items-center hover:opacity-90"
+                >
+                  <div className="relative mb-4 h-[200px] w-[200px]">
                     <Image
                       src={education.logo}
                       alt="University Logo"
-                      width={50}
-                      height={50}
+                      fill
                       className="object-contain"
                     />
-                    <span>{education.university}</span>
-                  </a>
-                </th>
-
-                <td className="w-2/3 p-4">
-                  <div className="mb-1 text-gray-800 dark:text-white">
-                    <b>{education.degree_type}</b>
-                    <br />
-                    {education.degree_name}
                   </div>
 
-                  <div className="mb-2 text-sm text-gray-500 dark:text-gray-400">
-                    {education.period}
+                  <p className="text-xl md:text-2xl font-semibold leading-snug text-slate-800 dark:text-white">
+                    {education.university}
+                  </p>
+                </a>
+              </div>
+
+              {/* Right Column */}
+              <div className="flex-1">
+                <div className="mb-1 text-2xl font-semibold text-slate-800 dark:text-white">
+                  {education.degree_type}
+                </div>
+
+                <div className="mb-3 text-xl text-gray-700 dark:text-gray-200">
+                  {education.degree_name}
+                </div>
+
+                <div className="mb-4 text-base text-gray-500 dark:text-gray-400">
+                  {education.period}
+                </div>
+
+                <ul className="mb-4 list-inside list-disc space-y-1 text-base text-gray-700 dark:text-gray-300">
+                  {education.gpa.map((item, gpaIdx) => (
+                    <li key={gpaIdx}>
+                      {item.label}: <span className="font-semibold text-slate-800 dark:text-white">{item.value}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                {education.transcript && (
+                  <div className="mt-5">
+                    <a
+                      href={education.transcript}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 rounded-lg border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-[#2E57A6] transition hover:bg-gray-50 dark:border-gray-600 dark:bg-gray-700 dark:hover:bg-gray-600"
+                    >
+                      View Transcript →
+                    </a>
                   </div>
-
-                  <ul className="list-inside list-disc text-sm text-gray-700 dark:text-gray-300">
-                    {education.gpa.map((item, gpaIdx) => (
-                      <li key={gpaIdx}>
-                        {item.label}: <b>{item.value}</b>
-                      </li>
-                    ))}
-                  </ul>
-
-                  {education.transcript && (
-                    <div className="mt-4">
-                      <a
-                        href={education.transcript}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1 rounded-md border px-4 py-2 text-sm text-blue-500 hover:bg-gray-100 dark:hover:bg-gray-600"
-                      >
-                        View Transcript →
-                      </a>
-                    </div>
-                  )}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+                )}
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
