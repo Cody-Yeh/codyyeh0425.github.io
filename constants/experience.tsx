@@ -66,7 +66,7 @@ const industryData: IndustryDataType[] = [
 const projectData: IndustryDataType[] = [
   [
   <div className="text-blue-500 dark:text-blue-300">
-    1. 1. Standardization of Platelet Lysate Processing and Extracellular Vesicle Isolation (MethodsX)
+    1. Standardization of Platelet Lysate Processing and Extracellular Vesicle Isolation (MethodsX)
   </div>,
   <div>
     <div className="text-black dark:text-white">

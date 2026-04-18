@@ -23,7 +23,7 @@ function Home() {
 
           {/* Center Content */}
           <div className="text-center md:text-left">
-            <h1 className="text-5xl font-bold tracking-[-0.03em] text-gray-800 dark:text-white lg:text-5xl">
+            <h1 className="text-left text-4xl font-bold tracking-[-0.02em] text-gray-800 dark:text-white">
               Cody Yeh
             </h1>
 
