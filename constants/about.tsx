@@ -81,22 +81,20 @@ const educationData = [
 ];
 
 const awardData = [
-  [
-    2024,
-    <>Honorable Mention – Special Research Final Oral Presentation</>,
-    <>
-      • Awarded by the Department of Biomedical Engineering for outstanding research presentation. <br />
-      • Research topic: Gene expression profiling in bone marrow-derived macrophages from mice upon incorporation of extracellular vesicles purified from serum-converted human platelet lysates.
-    </>,
-  ],
-  [
-    2023,
-    <>Excellent Work Award – Special Research Final Oral Presentation</>,
-    <>
-      • Awarded by the Department of Biomedical Engineering. <br />
-      • Research topic: Changes in mouse blood plasma extracellular vesicles composition with age and their role in macrophage response to kidney injury.
-    </>,
-  ],
+  {
+    year: "2024",
+    title: "Honorable Mention – Special Research Final Oral Presentation",
+    org: "Department of Biomedical Engineering",
+    topic:
+      "Gene expression profiling in bone marrow-derived macrophages exposed to platelet lysate-derived extracellular vesicles.",
+  },
+  {
+    year: "2023",
+    title: "Excellent Work Award – Special Research Final Oral Presentation",
+    org: "Department of Biomedical Engineering",
+    topic:
+      "Age-related changes in mouse blood plasma extracellular vesicles and their role in macrophage response to kidney injury.",
+  },
 ];
 
 const contactData = [

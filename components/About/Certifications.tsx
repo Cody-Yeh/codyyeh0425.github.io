@@ -46,8 +46,8 @@ export default function Certifications() {
       link: 'https://www.linkedin.com/learning/certificates/83e3be6ba2d302503fff34649c82c1d15f966bba47b2faee8dcfd4a3f6191cb2?accountId=0&u=0&success=true&authUUID=ymdvnbdORG6ZPZeCude07A%3D%3D',
     },
     {
-      title: 'Electron Microscopy (MSE1066)',
-      org: 'University of Toronto',
+      title: 'Scanning Electron Microscopy (SEM)',
+      org: 'University of Toronto (MSE1066)',
       date: 'May 2025',
       logo: '/certifications/UofTMSE.png',
       link: '/certifications/mse1066.pdf',
