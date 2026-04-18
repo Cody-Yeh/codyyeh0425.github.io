@@ -10,7 +10,7 @@ function Experience() {
   return (
     <>
       <div className="mx-auto flex w-screen flex-col px-5 md:w-2xl lg:w-3xl xl:w-4xl">
-        <h1 className="pb-5 pt-10 text-center text-4xl font-bold sm:text-5xl">My Experience</h1>
+        <h1 className="pb-5 pt-10 text-center text-4xl font-bold text-gray-900 sm:text-5xl">My Experience</h1>
         <div className="text-container mx-auto max-w-lg border-t-2 border-gray-400 pt-2">
           <p className="pb-5 text-center text-xl leading-normal text-gray-600 dark:text-gray-300">
             Turning knowledge into reliable systems, and experience into continuous improvement.

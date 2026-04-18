@@ -59,14 +59,15 @@ export default function Navbar() {
             <div className="flex flex-col">
               <Link
                 href="/"
-                className="rounded-lg px-4 py-3 hover:bg-white hover:shadow-lg hover:dark:bg-gray-800"
+                className="flex items-center gap-3 flex items-center gap-3 px-2 py-2 transition-opacity hover:opacity-80"
               >
-                <div className="inline text-xl font-semibold text-gray-800 dark:text-white">
-                  {generalData.name}
-                </div>
-                <div className="inline pl-1 text-xl font-light text-gray-600 dark:text-gray-300 max-sm:hidden">
-                  {' '}
-                  Website
+                <img
+                  src="/cody.jpg"
+                  alt="Cody Yeh"
+                  className="h-8 w-8 rounded-full object-cover"
+                />
+                <div className="text-base font-semibold text-gray-800 dark:text-white">
+                  Cody Yeh
                 </div>
               </Link>
             </div>

@@ -38,36 +38,46 @@ const publications = [
 
 export default function Publications() {
   return (
-    <div className="w-full rounded-lg bg-white px-4 py-12 shadow-md dark:bg-gray-600 sm:px-12">
-      
-      <h1 className="mb-12 text-center text-3xl font-bold text-black dark:text-white">
+    <div className="mx-auto w-full max-w-5xl px-6 py-16">
+
+      {/*Title OUTSIDE */}
+      <h1 className="mb-20 text-center text-3xl font-bold tracking-[-0.02em] text-gray-900 sm:text-5xl">
         Publications
       </h1>
 
-      <div className="space-y-12">
+      {/*Cards */}
+      <div className="space-y-10">
         {publications.map((pub, idx) => (
-          <div key={idx} className="border-b pb-8 last:border-none">
-
-            {/* Journal / Year */}
-            <h2 className="mb-3 text-xl font-semibold text-black dark:text-white">
+          <div
+            key={idx}
+            className="rounded-2xl border border-gray-200 bg-white px-8 py-8 shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:border-gray-700 dark:bg-gray-800"
+          >
+            
+            {/* Journal */}
+            <h2 className="mb-3 text-xl font-semibold text-gray-900 dark:text-white">
               {pub.heading}
             </h2>
 
-            <div className="space-y-2 text-base leading-relaxed text-black dark:text-white">
+            <div className="space-y-2 text-[1.05rem] leading-relaxed text-gray-700 dark:text-gray-300">
 
               {/* Title */}
               <p>
-                <span className="font-semibold">Title:</span> {pub.title}
+                <span className="font-semibold text-gray-900 dark:text-white">
+                  Title:
+                </span>{' '}
+                {pub.title}
               </p>
 
               {/* Authors */}
               <p>
-                <span className="font-semibold">Authors:</span>{' '}
+                <span className="font-semibold text-gray-900 dark:text-white">
+                  Authors:
+                </span>{' '}
                 {pub.authors.split('Wei-Ting Yeh').map((part, i, arr) => (
                   <span key={i}>
                     {part}
                     {i < arr.length - 1 && (
-                      <span className="font-bold">
+                      <span className="font-semibold text-gray-900 dark:text-white">
                         Wei-Ting Yeh
                       </span>
                     )}
@@ -77,8 +87,10 @@ export default function Publications() {
 
               {/* Role */}
               <p>
-                <span className="font-semibold">Role:</span>{' '}
-                <span className="font-bold">
+                <span className="font-semibold text-gray-900 dark:text-white">
+                  Role:
+                </span>{' '}
+                <span className="font-semibold">
                   {pub.role}
                 </span>{' '}
                 🏅
@@ -86,7 +98,9 @@ export default function Publications() {
 
               {/* Contribution */}
               <p>
-                <span className="font-semibold">Contribution:</span>{' '}
+                <span className="font-semibold text-gray-900 dark:text-white">
+                  Contribution:
+                </span>{' '}
                 {pub.contribution}
               </p>
             </div>
@@ -96,7 +110,7 @@ export default function Publications() {
               href={pub.pdf}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-block rounded-md bg-blue-500 px-4 py-2 text-sm font-medium text-white hover:bg-blue-600"
+              className="mt-5 inline-block rounded-lg bg-[#2E57A6] px-5 py-2.5 text-sm font-medium text-white transition hover:opacity-90"
             >
               View PDF
             </a>

@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
 body,
 html {
@@ -8,7 +9,9 @@ html {
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 @layer base {
@@ -26,7 +29,7 @@ body {
     -ms-overflow-style: none;
     scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
-    touch-action: pan-x;
+    touch-action: pan-x mandatory;
     scroll-snap-type: x mandatory;
   }
 }
@@ -34,13 +37,9 @@ body {
 * {
   user-select: inherit;
   -webkit-touch-callout: none;
-  /* Safari */
   -webkit-user-select: none;
-  /* Chrome */
   -moz-user-select: none;
-  /* Firefox */
   -ms-user-select: none;
-  /* Internet Explorer/Edge */
 }
 
 strong {
