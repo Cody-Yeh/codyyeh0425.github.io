@@ -1,8 +1,8 @@
 import Awards from '../components/About/Awards';
-import Contact from '../components/About/Contact';
 import Description from '../components/About/Description';
 import Education from '../components/About/Education';
 import Certifications from '../components/About/Certifications';
+import SoftwareSkills from '../components/Experience/Skills';
 
 function About() {
   return (
@@ -18,8 +18,8 @@ function About() {
           <Description />
           <Education />
           <Certifications />
+          <SoftwareSkills /> 
           <Awards />
-          <Contact />
         </div>
       </div>
     </>

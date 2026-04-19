@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import cody from '../public/Cody_Photo.png';
+import Contact from '../components/About/Contact';
 
 function Home() {
   return (
@@ -52,47 +53,45 @@ function Home() {
 
             {/* Buttons */}
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center md:justify-start">
+              <Link
+                href="/Cody_Resume.pdf"
+                className="w-[220px] whitespace-nowrap rounded-xl bg-[#2E57A6] px-6 py-3 text-center text-lg font-semibold text-white shadow-sm transition hover:opacity-90"
+              >
+                View Resume
+              </Link>
 
-            <Link
-              href="/Cody_Resume.pdf"
-              className="w-[220px] whitespace-nowrap text-center rounded-xl bg-[#2E57A6] px-6 py-3 text-lg font-semibold text-white shadow-sm transition hover:opacity-90"
-            >
-              View Resume
-            </Link>
+              <Link
+                href="/experience"
+                className="w-[220px] whitespace-nowrap rounded-xl border border-gray-300 bg-white px-6 py-3 text-center text-lg font-semibold text-gray-700 transition hover:bg-gray-50"
+              >
+                View Experience
+              </Link>
 
-            <Link
-              href="/experience"
-              className="w-[220px] whitespace-nowrap text-center rounded-xl border border-gray-300 bg-white px-6 py-3 text-lg font-semibold text-gray-700 transition hover:bg-gray-50"
-            >
-              View Experience
-            </Link>
-
-            <Link
-              href="/project"
-              className="w-[220px] whitespace-nowrap text-center rounded-xl border border-gray-300 bg-white px-6 py-3 text-lg font-semibold text-gray-700 transition hover:bg-gray-50"
-            >
-              View Projects
-            </Link>
-
-          </div>
+              <Link
+                href="/project"
+                className="w-[220px] whitespace-nowrap rounded-xl border border-gray-300 bg-white px-6 py-3 text-center text-lg font-semibold text-gray-700 transition hover:bg-gray-50"
+              >
+                View Projects
+              </Link>
+            </div>
           </div>
 
-           {/* Right Illustration */}
-            <div className="relative z-10 hidden lg:flex lg:justify-end">
-              <div className="relative h-[240px] w-[240px]">
-                <Image
-                  src="/microscope.png"
-                  alt="Microscope illustration"
-                  fill
-                  className="object-contain opacity-90"
-                />
-              </div>
+          {/* Right Illustration */}
+          <div className="relative z-10 hidden lg:flex lg:justify-end">
+            <div className="relative h-[240px] w-[240px]">
+              <Image
+                src="/microscope.png"
+                alt="Microscope illustration"
+                fill
+                className="object-contain opacity-90"
+              />
             </div>
-            </div>
+          </div>
+        </div>
       </section>
 
       {/* Featured Highlights */}
-      <section className="pb-24 pt-8">
+      <section className="pb-20 pt-8">
         <h2 className="text-center text-4xl font-bold tracking-[-0.02em] text-gray-800 dark:text-white">
           Featured Highlights
         </h2>
@@ -157,6 +156,13 @@ function Home() {
               data analysis for technical and research work.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="pb-24">
+        <div className="mx-auto max-w-5.4xl">
+          <Contact />
         </div>
       </section>
     </div>

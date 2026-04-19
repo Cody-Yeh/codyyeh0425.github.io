@@ -55,19 +55,19 @@ export default function Certifications() {
   ];
 
   return (
-    <div className="w-full rounded-lg bg-white px-4 py-12 shadow-md dark:bg-gray-600">
-      <h1 className="mb-8 text-center text-3xl font-bold">
+    <div className="w-full rounded-lg bg-white px-6 py-10 shadow-md dark:bg-gray-600">
+      <h1 className="mb-8 text-center text-3xl font-bold text-slate-800 dark:text-white">
         Certifications
       </h1>
 
-      <div className="space-y-6">
+      <div className="space-y-4">
         {certs.map((cert, index) => (
           <div
             key={index}
-            className="flex items-center justify-between gap-4 rounded-lg border p-4 dark:border-gray-500"
+            className="flex items-center justify-between gap-4 rounded-xl border border-gray-200 bg-white px-5 py-4 shadow-sm transition hover:shadow-md dark:border-gray-700 dark:bg-gray-800"
           >
             <div className="flex items-center gap-4">
-              <div className="h-12 w-12 flex items-center justify-center">
+              <div className="flex h-12 w-12 items-center justify-center">
                 <Image
                   src={cert.logo}
                   alt={cert.title}
@@ -78,7 +78,7 @@ export default function Certifications() {
               </div>
 
               <div className="flex flex-col">
-                <div className="font-semibold text-lg text-black dark:text-white">
+                <div className="text-lg font-semibold text-black dark:text-white">
                   {cert.title}
                 </div>
 
@@ -93,7 +93,7 @@ export default function Certifications() {
                 href={cert.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="shrink-0 rounded-md border px-3 py-1 text-sm text-blue-500 hover:bg-gray-100 dark:hover:bg-gray-700"
+                className="shrink-0 rounded-md border border-gray-300 px-3 py-1 text-sm text-blue-500 transition hover:bg-gray-100 dark:border-gray-600 dark:hover:bg-gray-700"
               >
                 View Credential →
               </a>

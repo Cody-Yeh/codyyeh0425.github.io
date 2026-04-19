@@ -1,5 +1,4 @@
 import Research from '../components/Experience/Research';
-import Skills from '../components/Experience/Skills';
 import Work from '../components/Experience/Work';
 import AdministrativeExperience from '../components/Experience/Administrative_Experience';
 // import OpenReview from '../components/Experience/OpenReview';
@@ -20,7 +19,6 @@ function Experience() {
             <Work />
             <Research />
             <AdministrativeExperience />
-            <Skills />
         </div>
       </div>
     </>
