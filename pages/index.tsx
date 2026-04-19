@@ -161,7 +161,7 @@ function Home() {
 
       {/* Contact Section */}
       <section className="pb-24">
-        <div className="mx-auto max-w-5.4xl">
+        <div className="mx-auto w-full">
           <Contact />
         </div>
       </section>

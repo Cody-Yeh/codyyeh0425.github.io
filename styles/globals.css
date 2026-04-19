@@ -9,8 +9,7 @@ html {
 }
 
 body {
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow: hidden;
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
@@ -29,7 +28,7 @@ body {
     -ms-overflow-style: none;
     scrollbar-width: none;
     -webkit-overflow-scrolling: touch;
-    touch-action: pan-x mandatory;
+    touch-action: pan-x;
     scroll-snap-type: x mandatory;
   }
 }
@@ -37,9 +36,13 @@ body {
 * {
   user-select: inherit;
   -webkit-touch-callout: none;
+  /* Safari */
   -webkit-user-select: none;
+  /* Chrome */
   -moz-user-select: none;
+  /* Firefox */
   -ms-user-select: none;
+  /* Internet Explorer/Edge */
 }
 
 strong {

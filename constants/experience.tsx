@@ -308,7 +308,7 @@ const researchData = [
       </p>
     </div>,
 
-    TMU, // ✅ THIS WAS MISSING
+    TMU, 
   ],
 ];
 
