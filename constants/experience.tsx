@@ -270,7 +270,7 @@ const projectData: IndustryDataType[] = [
 
 
   
-const researchData = [
+const researchData: IndustryDataType[] = [
   [
     <a
       href="https://www.lundylab.com/"
