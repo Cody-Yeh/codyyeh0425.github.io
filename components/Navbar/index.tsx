@@ -53,7 +53,7 @@ export default function Navbar() {
       )}
       <div className={`relative top-0`}>
         <div
-          className={`transition-top fixed left-0 right-0 z-nav h-32 max-w-screen px-4 py-10 duration-500 ${visible ? 'top-0' : '-top-32'} ${router.pathname === '/' ? '' : 'mt-0 bg-[#F1F1F1] dark:bg-gray-900'}`}
+          className={`transition-top fixed left-0 right-0 z-nav h-32 max-w-screen border-b border-gray-200/70 bg-[#F1F1F1]/95 px-4 py-10 backdrop-blur-md duration-500 dark:border-gray-800 dark:bg-gray-900/95 ${visible ? 'top-0' : '-top-32'}`}
         >
           <div className="mx-auto flex max-w-6xl items-center justify-between md:flex-row">
             <div className="flex flex-col">
